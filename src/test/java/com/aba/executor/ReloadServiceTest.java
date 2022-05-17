@@ -24,7 +24,7 @@ public class ReloadServiceTest {
 	ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
 	
 	@Test
-	public void test1() {
+	public void scheduleReloadTask_WhenInvoked_ExecutorMethodIsCalled() {
 		ReloadService service = new ReloadService(executor, checker);
 		
 		service.scheduleReloadTask();
